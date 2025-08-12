@@ -1,0 +1,71 @@
+nav {
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container{
+    display:flex;
+}
+
+.nav-container > a {
+    padding: 20px;
+}
+
+.hero {
+    margin-top: 100px; /* Adjust for fixed nav */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 2; /* Adjust width as needed */
+    padding: 20px;
+}
+
+.hero-image {
+    flex: 1;      /* don't grow/shrink */
+    max-height: 300px;   /* fixed max height for the container */
+    overflow: hidden;    /* hide anything that goes beyond */
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+.projects {
+    margin-top: 50px; /* Space below hero section */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Space between project cards */
+}
+
+.project-card{
+    /* 3 is the number of cards is (number of cards - 1) use 
+    this formula for more cards if needed */
+    flex: 0 0 calc((100% - (50px * 2)) / 3);
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    margin-top: 50px; /* Space below projects */
+    text-align: center;
+    padding: 15px;
+    background-color: #f1f1f1; /* Light background for footer */
+    position: relative; /* Position relative to the content */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between contact cards */
+}
