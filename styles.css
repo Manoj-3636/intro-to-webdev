@@ -23,9 +23,6 @@ nav a {
     font-size: large;
 }
 
-
-
-
 .nav-container {
     display: flex;
     flex-direction: row-reverse;
@@ -74,18 +71,30 @@ nav a {
 .projects {
     margin-top: 50px;
     /* Space below hero section */
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 50px;
     /* Space between project cards */
 }
 
 .project-card {
-    /* 3 is the number of cards is (number of cards - 1) use 
-    this formula for more cards if needed */
-    flex: 0 0 calc((100% - (50px * 2)) / 3);
-    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
 
 h2 {
     text-align: center;
