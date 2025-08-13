@@ -1,54 +1,90 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
 nav {
-    position:fixed;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 1000;
 }
 
-.nav-container{
-    display:flex;
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: top 5px;
+    border-radius: 7px;
+    font-size: large;
 }
 
-.nav-container > a {
+
+
+
+.nav-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.nav-container>a {
     padding: 20px;
 }
 
 .hero {
-    margin-top: 100px; /* Adjust for fixed nav */
-    display:flex;
-    justify-content: space-between;
+    margin-top: 40px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-color)
+    /* or gradient */
 }
 
 .hero-text {
-    flex: 2; /* Adjust width as needed */
+    flex: 2;
+    /* Adjust width as needed */
     padding: 20px;
 }
 
+.hero-text h1{
+    text-align: center;
+}
+
 .hero-image {
-    flex: 1;      /* don't grow/shrink */
-    max-height: 300px;   /* fixed max height for the container */
-    overflow: hidden;    /* hide anything that goes beyond */
+    flex: 1;
+    /* don't grow/shrink */
+    max-height: 400px;
+    /* fixed max height for the container */
+    overflow: hidden;
+    /* hide anything that goes beyond */
 }
 
 .hero-image img {
-    width: 300px;
-    height: 300px;
-    /* border-radius: 50%; */
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
 .projects {
-    margin-top: 50px; /* Space below hero section */
+    margin-top: 50px;
+    /* Space below hero section */
     display: flex;
     flex-wrap: wrap;
-    gap: 50px; /* Space between project cards */
+    gap: 50px;
+    /* Space between project cards */
 }
 
-.project-card{
+.project-card {
     /* 3 is the number of cards is (number of cards - 1) use 
     this formula for more cards if needed */
     flex: 0 0 calc((100% - (50px * 2)) / 3);
+    align-items: center;
 }
 
 h2 {
@@ -57,15 +93,44 @@ h2 {
 }
 
 footer {
-    margin-top: 50px; /* Space below projects */
+    margin-top: 50px;
+    /* Space below projects */
     text-align: center;
     padding: 15px;
-    background-color: #f1f1f1; /* Light background for footer */
-    position: relative; /* Position relative to the content */
+    background-color: #f1f1f1;
+    /* Light background for footer */
+    position: relative;
+    /* Position relative to the content */
 }
 
 .contact-info {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between contact cards */
+    gap: 20px;
+    /* Space between contact cards */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.hero h1 span {
+    color: #e94560;
+    /* highlight color for your name */
+}
+
+.project-card a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--text-color);
+    color:white;
+    display: block;
+    text-align: center;    
+}
+
+.project-card h3, p {
+    text-align: center;;
 }
