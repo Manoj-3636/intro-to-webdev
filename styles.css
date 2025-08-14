@@ -15,7 +15,7 @@ nav {
     z-index: 1000;
 }
 
-nav a {
+nav a,.contact-card a {
     text-decoration: none;
     color: var(--text-color);
     padding: top 5px;
