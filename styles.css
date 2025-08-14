@@ -69,7 +69,7 @@ nav a {
 }
 
 .projects {
-    margin-top: 50px;
+    margin-top: 30px;
     /* Space below hero section */
     display: grid;
     grid-template-columns:repeat(3,1fr);
@@ -106,7 +106,7 @@ footer {
     /* Space below projects */
     text-align: center;
     padding: 15px;
-    background-color: #f1f1f1;
+    background-color: #f4f4f4;
     /* Light background for footer */
     position: relative;
     /* Position relative to the content */
