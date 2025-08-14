@@ -4,17 +4,20 @@
     --background-color: #eeeff1;
 }
 
+/* Styling */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
 }
 
+/* Organization */
 nav {
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
+/* Styling */
 nav a,.contact-card a {
     text-decoration: none;
     color: var(--text-color);
@@ -23,35 +26,43 @@ nav a,.contact-card a {
     font-size: large;
 }
 
+/* Organization */
 .nav-container {
     display: flex;
     flex-direction: row-reverse;
     gap: 10px;
 }
 
+/* Organization */
 .nav-container>a {
     padding: 20px;
 }
 
+
 .hero {
+    /* Organization */
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* Styling */
     background-color: var(--background-color)
-    /* or gradient */
+
 }
 
 .hero-text {
+    /* Organization */
     flex: 2;
-    /* Adjust width as needed */
     padding: 20px;
 }
 
+/* Organization */
 .hero-text h1{
     text-align: center;
 }
 
+/* Organization */
 .hero-image {
     flex: 1;
     /* don't grow/shrink */
@@ -61,6 +72,7 @@ nav a,.contact-card a {
     /* hide anything that goes beyond */
 }
 
+/* Organization */ /* Without this the image will overflow */
 .hero-image img {
     width: 400px;
     height: 400px;
@@ -68,6 +80,7 @@ nav a,.contact-card a {
     object-fit: cover;
 }
 
+/* Organization */
 .projects {
     margin-top: 30px;
     /* Space below hero section */
@@ -79,36 +92,44 @@ nav a,.contact-card a {
     /* Space between project cards */
 }
 
+
 .project-card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    /* Organization */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    /* Styling */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    background: white;
 }
 
-
+/* Styling */
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-
+/* Styling */
 h2 {
     text-align: center;
     width: 100%;
 }
 
+/*  */
 footer {
+    /* Organization */
     margin-top: 50px;
     /* Space below projects */
     text-align: center;
     padding: 15px;
+    position: relative;
+
+    /* Styling */
     background-color: #f4f4f4;
     /* Light background for footer */
-    position: relative;
     /* Position relative to the content */
 }
 
@@ -119,17 +140,20 @@ footer {
     /* Space between contact cards */
 }
 
+/* Styling */
 .hero h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #111;
 }
 
+/* Styling */
 .hero h1 span {
     color: #e94560;
     /* highlight color for your name */
 }
 
+/* Styling */
 .project-card a {
     text-decoration: none;
     padding: 10px;
@@ -140,16 +164,20 @@ footer {
     text-align: center;    
 }
 
+/* Styling  */
+/* Keep note of the space before p its important as its a decendant selector */
 .project-card h3, p {
     text-align: center;;
 }
 
+/* JS */
 .reveal {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.5s ease-out;
 }
 
+/* JS */
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
