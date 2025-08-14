@@ -1,10 +1,11 @@
+/* Styling 0 */
 :root {
     --text-color: #1a1c20;
     --link-color: #4a76ee;
     --background-color: #eeeff1;
 }
 
-/* Styling */
+/* Styling 1 */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
@@ -17,13 +18,17 @@ nav {
     z-index: 1000;
 }
 
-/* Styling */
+/* Styling 2 */
 nav a,.contact-card a {
     text-decoration: none;
     color: var(--text-color);
-    padding: top 5px;
+    padding-top: 5px;
     border-radius: 7px;
     font-size: large;
+}
+
+nav a:hover {
+    color: var(--link-color);
 }
 
 /* Organization */
@@ -46,7 +51,7 @@ nav a,.contact-card a {
     align-items: center;
     justify-content: space-between;
 
-    /* Styling */
+    /* Styling 3 */
     background-color: var(--background-color)
 
 }
@@ -99,26 +104,25 @@ nav a,.contact-card a {
     flex-direction: column;
     justify-content: space-between;
     
-    /* Styling */
+    /* Styling 5 */
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-radius: 12px;
     background: white;
 }
 
-/* Styling */
+/* Styling 5 */
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Styling */
+/* Styling 1*/
 h2 {
     text-align: center;
     width: 100%;
 }
 
-/*  */
 footer {
     /* Organization */
     margin-top: 50px;
@@ -127,33 +131,33 @@ footer {
     padding: 15px;
     position: relative;
 
-    /* Styling */
+    /* Styling 8 */
     background-color: #f4f4f4;
     /* Light background for footer */
     /* Position relative to the content */
 }
-
+/* Styling 8*/
 .contact-info {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     /* Space between contact cards */
 }
 
-/* Styling */
+/* Styling 4 */
 .hero h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #111;
 }
 
-/* Styling */
+/* Styling 4 */
 .hero h1 span {
     color: #e94560;
     /* highlight color for your name */
 }
 
-/* Styling */
+/* Styling 6 */
 .project-card a {
     text-decoration: none;
     padding: 10px;
@@ -164,10 +168,10 @@ footer {
     text-align: center;    
 }
 
-/* Styling  */
+/* Styling 7 */
 /* Keep note of the space before p its important as its a decendant selector */
 .project-card h3, p {
-    text-align: center;;
+    text-align: center;
 }
 
 /* JS */
